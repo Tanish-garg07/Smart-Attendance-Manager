@@ -1,0 +1,5 @@
+{
+  "name": "Attendance 1",
+  "description": "A comprehensive attendance tracking system with timetable management and real-time percentage calculations.",
+  "requestFramePermissions": ["camera"]
+}
