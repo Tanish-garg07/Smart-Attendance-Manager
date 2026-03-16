@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="logo.png" width="220">
+</p>
+
+<h1 align="center">Smart Attendance Manager</h1>
+
 # Smart Attendance Manager
 
 Smart Attendance Manager is an Android app designed to help students manage their academic tasks in one place. The app allows users to track attendance, manage assignments, and plan exams without needing an internet connection.
