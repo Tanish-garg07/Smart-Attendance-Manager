@@ -1,20 +1,113 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Smart Attendance Manager
 
-# Run and deploy your AI Studio app
+Smart Attendance Manager is an Android app designed to help students manage their academic tasks in one place. The app allows users to track attendance, manage assignments, and plan exams without needing an internet connection.
 
-This contains everything you need to run your app locally.
+The frontend is built using **React, Vite, and Tailwind CSS**, and the web app is packaged into an Android application using **Android Studio WebView**.
 
-View your app in AI Studio: https://ai.studio/apps/981cb07f-f1f1-4b92-8ac2-f3e7232e2337
+The main goal of this project was to create a lightweight student productivity app that works completely offline.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## Features
 
+- Track subject-wise attendance
+- Automatic attendance percentage calculation
+- Safe bunk prediction for each subject
+- QR code based attendance scanning
+- Upload QR screenshot from gallery
+- Assignment manager with deadlines
+- Exam planner / personal date sheet
+- Calendar view to edit past attendance
+- Light and dark mode support
+- Fully offline functionality (data stored locally)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## Tech Stack
+
+Frontend  
+- React  
+- Vite  
+- Tailwind CSS  
+
+Android Wrapper  
+- Android Studio  
+- Android WebView  
+
+Storage  
+- LocalStorage (offline data)
+
+---
+
+## How It Works
+
+The React app is built normally and then packaged into an Android application.
+
+1. Build the web app using Vite
+2. Copy the production build into the Android project assets folder
+3. Load the app inside a WebView
+
+```
+React App → Build (dist) → Android WebView → APK
+```
+
+This allows the application to run as a native Android app while still being developed as a web application.
+
+---
+
+## Running the Project
+
+Clone the repository:
+
+```
+git clone https://github.com/your-username/smart-attendance-manager.git
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run development server:
+
+```
+npm run dev
+```
+
+Build the production version:
+
+```
+npm run build
+```
+
+---
+
+## Building the Android App
+
+1. Open the Android project in **Android Studio**
+2. Copy the contents of the `dist` folder into:
+
+```
+app/src/main/assets/
+```
+
+3. Run the project on a device or emulator.
+
+To generate the APK:
+
+```
+Build → Generate Signed Bundle / APK
+```
+
+---
+
+## Project Purpose
+
+This project was built as a student productivity tool and as a learning project to explore how a React application can be converted into an Android app using WebView.
+
+---
+
+## Author
+
+Tanish Garg
